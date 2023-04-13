@@ -1,0 +1,213 @@
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 40px 40px;
+
+    object-fit: cover;
+  }
+
+  .content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+
+    .logo {
+      position: absolute;
+      top: 180px;
+      left: 220px;
+    }
+
+    .slogan {
+      position: absolute;
+      top: 303px;
+      left: 226px;
+
+      .line {
+        position: absolute;
+        bottom: 16px;
+        left: -12px;
+      }
+
+      h1 {
+        z-index: 10;
+        color: #fff;
+        letter-spacing: 8.6px;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 70px;
+      }
+    }
+  }
+
+  .mask {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 40px 40px;
+    background: #0003;
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 58.6px;
+    left: 50%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transform: translateX(-50%);
+
+    .mouse {
+      margin-bottom: 10px;
+      width: 65px;
+      height: 65px;
+      background: url('~assets/images/taste.png') no-repeat;
+
+      &:hover {
+        animation: bounce 1s ease-in-out 3;
+      }
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .guide {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 1px);
+    z-index: 10;
+    width: 1px;
+    height: 44px;
+    background: #fff;
+  }
+
+  .text {
+    position: absolute;
+    top: 249px;
+    left: 62px;
+    color: #fff;
+    letter-spacing: 2.22222px;
+    font-size: 16px;
+    line-height: 19px;
+    transform: rotate(-180deg);
+
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+
+    &::before {
+      position: absolute;
+      top: -80px;
+      right: -47px;
+      display: block;
+      width: 113px;
+      height: 2px;
+      background: #fff;
+      content: '';
+      transform: rotate(90deg);
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    .content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .logo {
+        position: relative;
+        top: initial;
+        left: initial;
+        margin-bottom: 40px;
+      }
+
+      .slogan {
+        position: relative;
+        top: initial;
+        left: initial;
+
+        .line {
+          display: none;
+        }
+
+        h1 {
+          margin-bottom: 20px;
+          text-align: center;
+          letter-spacing: 1px;
+          font-size: 18px;
+          line-height: 1;
+        }
+      }
+    }
+
+    .text {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .intro {
+    .content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .logo {
+        position: relative;
+        top: initial;
+        left: initial;
+        margin-bottom: 40px;
+      }
+
+      .slogan {
+        position: relative;
+        top: initial;
+        left: initial;
+
+        .line {
+          display: none;
+        }
+
+        h1 {
+          margin-bottom: 20px;
+          text-align: center;
+          font-size: 18px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}

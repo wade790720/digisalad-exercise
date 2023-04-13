@@ -1,0 +1,51 @@
+:global {
+  * {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  html {
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 60px;
+      background-color: #c9cbce;
+    }
+
+    ::-webkit-scrollbar-track {
+      border-radius: 60px;
+      background-color: #f6f6f7;
+    }
+  }
+
+  body {
+    margin: 0;
+    background-color: #e5e5e5;
+    color: #262626;
+    font-style: normal;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'proxima-nova', Roboto, Oxygen, Ubuntu, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif;
+    line-height: 1.42857;
+
+    text-decoration-skip-ink: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  button {
+    text-transform: uppercase;
+  }
+}
+
+.main {
+  position: relative;
+}

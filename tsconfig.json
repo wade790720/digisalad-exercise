@@ -1,10 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
+    ],
+    "types": [
+      "react/next",
+      "react-dom/next",
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,9 +23,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "noEmitOnError": true,
+    "jsx": "react-jsx",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
   },
   "include": [
-    "src"
+    "src",
+    "src/assets/**/*.mp4"
   ]
 }

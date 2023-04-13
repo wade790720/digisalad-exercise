@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 25px;
+  width: 345px;
+  color: #fff;
+
+  & > * {
+    margin-bottom: 20px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  .title {
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .name {
+    text-transform: uppercase;
+  }
+
+  button {
+    width: 165px;
+    height: 58px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background: #fff0 !important;
+  }
+
+  p {
+    text-align: center;
+  }
+}

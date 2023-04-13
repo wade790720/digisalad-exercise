@@ -1,0 +1,98 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 104px 153px;
+  background: #26c6d0;
+  color: #fff;
+
+  svg {
+    path {
+      fill: #585880;
+      stroke: #585880;
+    }
+  }
+
+  & > button {
+    margin-bottom: 85px;
+    width: 223px;
+    height: 86px;
+    border-radius: 1px;
+    background: #585880 !important;
+    color: #fff;
+
+    &::after {
+      margin-left: 15px;
+      width: 52px;
+      height: 2px;
+      background: #fff;
+      content: '';
+    }
+  }
+
+  & > p {
+    margin-bottom: 30px;
+    max-width: 1007px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 102px;
+  }
+
+  .prompt {
+    position: relative;
+    cursor: pointer;
+
+    p {
+      z-index: 5;
+      letter-spacing: 2px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .line {
+      position: absolute;
+      bottom: 0;
+      left: -15px;
+      z-index: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    display: block;
+    padding: 0 20px;
+    padding-top: 427px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    .services {
+      margin: 0;
+    }
+
+    .prompt {
+      text-align: center;
+
+      .line {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .wrapper {
+    padding: 20px;
+    padding-top: 350px;
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,146 @@
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  transition: background 0.5s ease-in-out;
+
+  &.sticky {
+    background: #fff;
+    opacity: 1;
+
+    .logo {
+      visibility: visible;
+    }
+
+    .nav-wrap {
+      .menu-icon-line {
+        background: #414042;
+      }
+    }
+  }
+
+  .show {
+    visibility: visible !important;
+  }
+
+  .hide {
+    visibility: hidden;
+  }
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 100px;
+  }
+
+  .logo {
+    visibility: hidden;
+    margin-left: 50px;
+  }
+
+  button {
+    width: 200px;
+    height: 40px;
+    border-radius: 24px;
+    background: linear-gradient(90deg, #4ee5ea 3.94%, #26d0a8 94.73%) !important;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    height: 41px;
+  }
+
+  .nav-wrap {
+    position: relative;
+    padding-left: 44px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    &.active {
+      .menu-icon-line {
+        -webkit-transform: translate(0px, 0px) rotate(-45deg);
+                transform: translate(0px, 0px) rotate(-45deg);
+      }
+
+      .menu-icon-line-right {
+        width: 15px;
+        -webkit-transform: translate(2px, 4px) rotate(45deg);
+                transform: translate(2px, 4px) rotate(45deg);
+      }
+
+      .menu-icon-line-left {
+        float: right;
+        width: 15px !important;
+        -webkit-transform: translate(-3px, -3.5px) rotate(45deg);
+                transform: translate(-3px, -3.5px) rotate(45deg);
+      }
+    }
+
+    .menu-icon {
+      position: relative;
+      z-index: 55;
+      display: block;
+    }
+
+    .menu-icon-line {
+      display: block;
+      width: 30px;
+      height: 3px;
+      border-radius: 3px;
+      background: #fff;
+      -webkit-transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
+              transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
+              transition: transform 0.2s ease, background-color 0.5s ease;
+              transition: transform 0.2s ease, background-color 0.5s ease, -webkit-transform 0.2s ease;
+
+      & + .menu-icon-line {
+        margin-top: 6px;
+      }
+
+      &:last-child {
+        float: right;
+        width: 26px;
+      }
+
+      &.menu-icon__line-left {
+        -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+      }
+
+      &.menu-icon-line-right {
+        -webkit-transition: all 200ms linear;
+           -moz-transition: all 200ms linear;
+            -ms-transition: all 200ms linear;
+             -o-transition: all 200ms linear;
+                transition: all 200ms linear;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    .inner {
+      button {
+        display: none;
+      }
+    }
+
+    .logo {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .wrapper {
+    .logo {
+      margin-left: 15px;
+    }
+  }
+}

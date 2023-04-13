@@ -1,0 +1,148 @@
+.wrapper {
+  padding: 193px 98px;
+  background: url('~assets/images/slide_bg.png') no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  .pagination {
+    position: absolute;
+    right: 114px;
+    z-index: 50;
+    width: 54px;
+    height: 47px;
+    color: #fff;
+    letter-spacing: 2.22222px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    .separation {
+      width: 47px;
+      height: 1px;
+      border: 1px solid #26c6d0;
+      transform: rotate(135deg);
+    }
+  }
+
+  .outer {
+    color: #fff;
+  }
+
+  .inner {
+    display: flex;
+    padding: 0 66px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    padding-top: 22px;
+    padding-left: 65px;
+
+    .showcase {
+      letter-spacing: 2.22222px;
+      font-weight: 700;
+      line-height: 19px;
+    }
+
+    .line {
+      position: absolute;
+      bottom: 5px;
+      left: -10px;
+      z-index: 1;
+    }
+
+    .title {
+      & > h2 {
+        z-index: 10;
+        padding-top: 20px;
+        letter-spacing: 3.63636px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+      }
+    }
+
+    & > p {
+      margin-top: 40px;
+      letter-spacing: 1px;
+      line-height: 24px;
+    }
+  }
+}
+
+.next {
+  ::before {
+    visibility: hidden;
+  }
+}
+
+.prev {
+  ::before {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 25px;
+
+    .pagination {
+      right: initial;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .inner {
+      flex-direction: column;
+      padding: 20px;
+      padding-top: 50px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .description {
+      padding: 20px;
+
+      .showcase {
+        margin-top: 10px;
+        line-height: 1;
+      }
+
+      .title {
+        .line {
+          display: none;
+        }
+
+        p {
+          margin-top: 10px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .wrapper {
+    padding: 50px;
+
+    .pagination {
+      right: initial;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .inner {
+      flex-direction: column;
+      padding-top: 75px;
+    }
+
+    .description {
+      padding: 20px;
+    }
+  }
+}
