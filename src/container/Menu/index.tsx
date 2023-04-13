@@ -27,53 +27,53 @@ const Menu = ({ ...props }: MenuProps) => {
 
             <div className={styled.content}>
                 <div className={styled.inner}>
-                    <div className={styled.item}>
-                        <div className={cx(styled.card, styled.about)}>
-                            <img src={icon01} alt="" />
+                    <div className={cx(styled.item, styled.about)}>
+                        <div className={styled.card}>
+                            <img src={icon01} alt="menu01" />
                             <div className={styled.title}>
                                 <p>EMPOWERING BRANDS</p>
                                 <p>ABOUT US</p>
                             </div>
                         </div>
                     </div>
-                    <div className={styled.item}>
-                        <div className={cx(styled.card, styled.careers)}>
-                            <img src={icon03} alt="" />
+                    <div className={cx(styled.item,styled.careers)}>
+                        <div className={styled.card}>
+                            <img src={icon03} alt="menu02" />
                             <div className={styled.title}>
                                 <p>BE COOL WITH US</p>
                                 <p>CAREERS</p>
                             </div>
                         </div>
                     </div>
-                    <div className={styled.item}>
-                        <div className={cx(styled.card, styled.services)}>
-                            <img src={icon05} alt="" />
+                    <div className={cx(styled.item,styled.services)}>
+                        <div className={styled.card}>
+                            <img src={icon05} alt="menu03" />
                             <div className={styled.title}>
                                 <p>AREAS OF EXPERTISE</p>
                                 <p>SERVICES</p>
                             </div>
                         </div>
                     </div>
-                    <div className={styled.item}>
-                        <div className={cx(styled.card, styled.works)}>
-                            <img src={icon02} alt="" />
+                    <div className={cx(styled.item,styled.works)}>
+                        <div className={styled.card}>
+                            <img src={icon02} alt="menu04" />
                             <div className={styled.title}>
                                 <p>CASE STUDIES</p>
                                 <p>WORKS</p>
                             </div>
                         </div>
                     </div>
-                    <div className={styled.item}>
-                        <div className={cx(styled.card, styled.insights)}>
-                            <img src={icon04} alt="" />
+                    <div className={cx(styled.item,styled.insights)}>
+                        <div className={styled.card}>
+                            <img src={icon04} alt="menu05" />
                             <div className={styled.title}>
                                 <p>OUR STRATEGIES</p>
                                 <p>INSIGHTS</p>
                             </div>
                         </div>
                     </div>
-                    <div className={styled.item}>
-                        <div className={cx(styled.card, styled.contact)}>
+                    <div className={cx(styled.item,styled.contact)}>
+                        <div className={styled.card}>
                             <div className={styled.title}>
                                 <p>START YOUR JOURNEY WITH US</p>
                                 <p>CONTACT</p>
